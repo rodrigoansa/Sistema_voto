@@ -77,11 +77,16 @@ def votar():
     confirmarVotopre()
 
 def apuracao():
-    print("a")
+    if governador() == gov1[1]:
+        votosgov1 += 1
+    elif governador() == gov2[1]:
+        votosgov2 += 1
 
 while True:
     print('1 - VOTAR: \n2 - APURAÇÃO: ')
     opcao = input('ESCOLHA A OPÇÃO: ')
     if opcao == '1':
         votar()
+    else:
+        apuracao()
     
