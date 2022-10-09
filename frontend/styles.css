@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+#root div {
+    background-color: #ddd;
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+    margin: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s;
+}
+
+#root div:hover {
+    cursor: pointer;
+    transform: scale(1.03, 1.03);
+    background-color: #444;
+    color: #ddd;
+}
+
+#root div p + p {
+    margin-top: 8px;
+}
