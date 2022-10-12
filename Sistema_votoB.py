@@ -79,8 +79,11 @@ def votar():
 def apuracao():
     if governador() == gov1[1]:
         votosgov1 += 1
+        print(f'1- {gov1[0]} = {votosgov1}')
     elif governador() == gov2[1]:
         votosgov2 += 1
+        print(f'2- {gov1[0]} = {votosgov1}')
+    
 
 while True:
     print('1 - VOTAR: \n2 - APURAÇÃO: ')
