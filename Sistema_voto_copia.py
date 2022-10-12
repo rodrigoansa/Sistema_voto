@@ -21,7 +21,7 @@ governadores = [
     }
 ]
 
-prefeitos = [
+presidente = [
     {
         "name": 'Pelé',
         "number": '14',
@@ -48,7 +48,7 @@ def votarPrefeito():
     voto = input('Digite o voto para Prefeito: ')
     candidatoEscolhido = None
 
-    for candidato in prefeitos:
+    for candidato in presidente:
         if(candidato["number"] == voto):
             candidatoEscolhido = candidato
     
@@ -98,7 +98,7 @@ def apuracao():
         print(f'Votos: {candidato["votes"]}')
 
     print('--------- Prefeitos ---------')
-    for candidato in prefeitos:
+    for candidato in presidente:
         print('------')
         print(f'Candidato: {candidato["name"]}')
         print(f'Numero: {candidato["number"]}')
