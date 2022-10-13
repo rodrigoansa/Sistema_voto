@@ -44,36 +44,36 @@ presidente = [
     }
 ]
 
-def votarPrefeito():
+def votarPresidente():
     voto = input('Digite o voto para Prefeito: ')
     candidatoEscolhido = None
 
     for candidato in presidente:
-        if(candidato["number"] == voto):
+        if candidato["number"] == voto:
             candidatoEscolhido = candidato
     
-    if(candidatoEscolhido is None):
+    if candidatoEscolhido is None:
         print('Não encontrado!')
     else:
-        if(confirmarVoto(candidatoEscolhido)):
+        if confirmarVoto(candidatoEscolhido):
             candidatoEscolhido["votes"] += 1
             print('Voto confirmado!')
         else:
-            votarPrefeito()
+            votarPresidente()
 
 def votarGovernador():
     voto = input('Digite o voto para Governador: ')
     candidatoEscolhido = None
 
     for candidato in governadores:
-        if(candidato["number"] == voto):
+        if candidato["number"] == voto:
             candidatoEscolhido = candidato
     
-    if(candidatoEscolhido is None):
+    if candidatoEscolhido is None:
         print('Não encontrado!')
 
     else:
-        if(confirmarVoto(candidatoEscolhido)):
+        if confirmarVoto(candidatoEscolhido):
             candidatoEscolhido["votes"] += 1
             print('Voto confirmado!')
         else:
@@ -87,7 +87,7 @@ def confirmarVoto(candidato):
 
 def votar():
     votarGovernador()
-    votarPrefeito()
+    votarPresidente()
 
 def apuracao():
     print('--------- Governadores ---------')
