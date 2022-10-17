@@ -1,3 +1,5 @@
+import os
+
 gov = ['Xuxa', '11', 'Angelica', '21', 'Sasha', '36']
 govVotos = [0,0,0]
 
@@ -5,6 +7,7 @@ pre = ['Pele', '16', 'Maradona', '26', 'Puskas', '42']
 preVotos = [0,0,0]
 
 def governador():
+    os.system("clear")
     escolha = input('Digite um número para governador: ')
 
 
@@ -28,6 +31,7 @@ def governador():
         governador()
 
 def presidente():
+    os.system("clear")
     escolha = input('Digite um número para presidente: ')
 
 
@@ -52,9 +56,9 @@ def presidente():
     
 def votar():
     governador()
-    presidente()
-
+    
 def apuracao():
+    os.system("clear")
     print('------------------')
     print('  GOVERNADORES')
     print('------------------')
